@@ -119,7 +119,7 @@ RUN drush init -y
 WORKDIR /var/www/html/
 
 ### Git clone Drupal code with personal access token ###
-RUN git clone -b $BRANCH https://$GIT_TOKEN@github.com/$GIT_REPO.git .
+RUN git clone  https://github.com/MeeraRepo/Azure-App-Service-Drupal7.git .
 # Add directories for public and private files
 RUN mkdir -p  /home/site/wwwroot/sites/default/files \
     && mkdir -p  /home/site/wwwroot/sites/default/files/private \
